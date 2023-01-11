@@ -4,7 +4,11 @@
 
 <h3>First challenge</h3>
 <div>
-  <pre>{contarOvejas}</pre>
+  <pre>
+    <code class="language-js">
+      {contarOvejas}
+    </code>
+  </pre>
 </div>
 
 <style>
@@ -14,9 +18,12 @@
     align-items: center;
   }
 
+  h3 {
+    padding-left: 1rem;
+  }
+
   pre {
     background-color: #27272a;
-    color: #e3a008;
     padding: 1rem;
     border-radius: 12px;
     width: 600px;
@@ -25,7 +32,7 @@
   }
 
   @media (max-width: 1200px) {
-    pre {
+    code {
       width: 300px;
     }
   }

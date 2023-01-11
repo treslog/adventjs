@@ -6,7 +6,8 @@
 <main>
   <header>
     <h1>advent<span>JS</span></h1>
-    <p>All solutions for the challenges of the <strong>adventjs</strong>. Credits to <strong>@midudev</strong></p> 
+    <p>All solutions for the challenges of the <strong>adventjs</strong> by <a href='https://github.com/treslog' target='_blank' rel='noopener noreferrer' ><strong>@treslog</strong></a>.</p> 
+    <p>Credits to <strong>@midudev</strong>.</p>
   </header>
   <section>
     <h2>adventjs 2021</h2>
@@ -49,6 +50,15 @@
   h1 {
     font-weight: 700;
     font-size: 2rem;
+  }
+
+  a {
+    color: #e3a008;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   span {
