@@ -1,21 +1,33 @@
 <script>
-    import {listGifts} from "./second"
-  
-  </script>
-  
-  <section>
-    <h2>Second challenge</h2>
-    <pre>{listGifts}</pre>
-  </section>
-  
-  <style>
-    section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 100px;
-      border: 1px solid rgb(126, 126, 126);
-      border-radius: 10px;
+  import { listGifts } from "./second";
+</script>
+
+<h3>Second challenge</h3>
+<div>
+  <pre>{listGifts}</pre>
+</div>
+
+<style>
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  pre {
+    background-color: #27272a;
+    color: #e3a008;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 600px;
+    font-size: 0.7rem;
+    overflow: scroll;
+  }
+
+  @media (max-width: 1200px) {
+    pre {
+      width: 300px;
+      overflow: scroll;
     }
-  </style>
-  
+  }
+</style>

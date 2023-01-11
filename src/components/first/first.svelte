@@ -1,20 +1,32 @@
 <script>
   import { contarOvejas } from "./first";
-
 </script>
 
-<section>
-  <h2>First challenge</h2>
+<h3>First challenge</h3>
+<div>
   <pre>{contarOvejas}</pre>
-</section>
+</div>
 
 <style>
-  section {
+  div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
-    border: 1px solid rgb(126, 126, 126);
-    border-radius: 10px;
+  }
+
+  pre {
+    background-color: #27272a;
+    color: #e3a008;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 600px;
+    font-size: 0.7rem;
+    overflow: scroll;
+  }
+
+  @media (max-width: 1200px) {
+    pre {
+      width: 300px;
+    }
   }
 </style>
