@@ -1,9 +1,9 @@
 <script>
-  import Code from "../components/code.svelte"
-  import { contarOvejas } from "../components/first/first"
-  import { listGifts } from "../components/second/second"
-  import { isValid } from "../components/third/third"
-  import { createXmasTree } from "../components/fourth/forth"
+  import Code from "../components/code.svelte";
+  import { contarOvejas } from "../components/first/first";
+  import { listGifts } from "../components/second/second";
+  import { isValid } from "../components/third/third";
+  import { createXmasTree } from "../components/fourth/forth";
 </script>
 
 <main>
