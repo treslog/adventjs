@@ -1,14 +1,15 @@
 <script>
-  import { contarOvejas } from "./first";
+  export let code;
+  export let number;
 </script>
 
-<h3>First challenge</h3>
+<h3>{number} challenge</h3>
 <div>
   <pre>
-    <code class="language-js">
-      {contarOvejas}
-    </code>
-  </pre>
+      <code class="language-js">
+        {code}
+      </code>
+    </pre>
 </div>
 
 <style>
@@ -28,7 +29,7 @@
     border-radius: 12px;
     width: 600px;
     font-size: 0.7rem;
-    overflow: scroll;
+    overflow: auto;
   }
 
   @media (max-width: 1200px) {
@@ -36,4 +37,10 @@
       width: 300px;
     }
   }
+
+  pre::after{
+    content: "\a";
+    white-space: pre;
+    display: inline;
+}
 </style>

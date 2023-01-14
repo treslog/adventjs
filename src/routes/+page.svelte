@@ -1,38 +1,48 @@
 <script>
-  import Second from "../components/second/second.svelte";
-  import First from "../components/first/first.svelte";
+  import Code from "../components/code.svelte"
+  import { contarOvejas } from "../components/first/first"
+  import { listGifts } from "../components/second/second"
+  import { isValid } from "../components/third/third"
+  import { createXmasTree } from "../components/fourth/forth"
 </script>
 
 <main>
   <header>
     <h1>advent<span>JS</span></h1>
-    <p>All solutions for the challenges of the <strong>adventjs</strong> by <a href='https://github.com/treslog' target='_blank' rel='noopener noreferrer' ><strong>@treslog</strong></a>.</p> 
+    <p>
+      All solutions for the challenges of the <strong>adventjs</strong> by
+      <a
+        href="https://github.com/treslog"
+        target="_blank"
+        rel="noopener noreferrer"><strong>@treslog</strong></a
+      >.
+    </p>
     <p>Credits to <strong>@midudev</strong>.</p>
   </header>
   <section>
     <h2>adventjs 2021</h2>
     <article>
-      <First />
+      <Code code={contarOvejas.toString()} number="First" />
     </article>
     <article>
-      <Second />
+      <Code code={listGifts.toString()} number="Second" />
     </article>
-    <article>Third</article>
-    <article>Fourth</article>
+    <article>
+      <Code code={isValid.toString()} number="Third" />
+    </article>
+    <article>
+      <Code code={createXmasTree.toString()} number="Fourth" />
+    </article>
     <h2>adventjs 2022</h2>
-    <article>
-      First
-    </article>
-    <article>
-      Second
-    </article>
+    <article>First</article>
+    <article>Second</article>
   </section>
 </main>
 
 <style>
   main {
     width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
     border: 1px solid #27272a;
     border-top: 0;
     min-height: 100vh;
@@ -74,7 +84,6 @@
     place-content: center;
     gap: 1rem;
     grid-template-columns: 700px;
-
   }
 
   article {
@@ -99,7 +108,5 @@
       padding: 0 2rem;
       padding-top: 3rem;
     }
-    
   }
-
 </style>
