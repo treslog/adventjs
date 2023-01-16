@@ -27,9 +27,9 @@
     background-color: #27272a;
     padding: 1rem;
     border-radius: 12px;
-    width: 600px;
     font-size: 0.7rem;
     overflow: auto;
+    width: 200px;
   }
 
   @media (max-width: 1200px) {

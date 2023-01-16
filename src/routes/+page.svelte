@@ -4,6 +4,7 @@
   import { listGifts } from "../components/second/second";
   import { isValid } from "../components/third/third";
   import { createXmasTree } from "../components/fourth/forth";
+  import { daysToXmas } from "../components/fifth/fifth";
 </script>
 
 <main>
@@ -32,6 +33,9 @@
     </article>
     <article>
       <Code code={createXmasTree.toString()} number="Fourth" />
+    </article>
+    <article>
+      <Code code={daysToXmas.toString()} number="Fifth" />
     </article>
     <h2>adventjs 2022</h2>
     <article>First</article>
